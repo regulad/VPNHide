@@ -8,21 +8,7 @@ repository:
     family so a target app never sees the utun/ipsec tunnel, while traffic keeps
     routing through the VPN. roothide/Dopamine, scoped via a Settings picker.
   homepage: ""
-  topics:
-    - ios
-    - jailbreak
-    - tweak
-    - roothide
-    - dopamine
-    - vpn
-    - vpn-detection
-    - anti-detection
-    - theos
-    - ellekit
-    - libsandy
-    - altlist
-    - arm64e
-    - ios15
+  topics: "ios, jailbreak, tweak, roothide, dopamine, vpn, vpn-detection, anti-detection, theos, ellekit, libsandy, altlist, arm64e, ios15"
   has_issues: true
   has_projects: false
   has_wiki: false
