@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Filter</key>
+  <dict>
+    <!-- Load into every UIKit app so the tweak can self-gate at runtime. It does
+         NOTHING unless the current app's bundle ID is in the EnabledBundles
+         preference (set from the VPNHide Settings page), so it is inert
+         everywhere by default and cannot break an app you did not enable. -->
+    <key>Classes</key>
+    <array>
+      <string>UIApplication</string>
+    </array>
+  </dict>
+</dict>
+</plist>

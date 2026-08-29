@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- libSandy profile: any process (VPNHide loads into every app) may apply
+	     it, so it can read EnabledBundles directly and bypass cfprefsd's
+	     cross-domain user-preference-read denial. The file only holds a list of
+	     bundle IDs, so a "*" allowlist is fine. NOTE: the roothide libSandy fork
+	     runs jbroot() on this path before issuing the extension, so the grant
+	     lands on the jbroot'd path - which is what the tweak reads (see Tweak.x). -->
+	<key>AllowedProcesses</key>
+	<array>
+		<string>*</string>
+	</array>
+	<key>Extensions</key>
+	<array>
+		<dict>
+			<key>type</key>
+			<string>file</string>
+			<key>extension_class</key>
+			<string>com.apple.app-sandbox.read-write</string>
+			<key>path</key>
+			<string>/var/mobile/Library/Preferences/xyz.regulad.vpnhide.plist</string>
+		</dict>
+	</array>
+</dict>
+</plist>

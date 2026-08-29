@@ -1,0 +1,34 @@
+# Managed by the Probot "Settings" app (github.com/repository-settings/app).
+# Editing this file and pushing it to the default branch updates the repo.
+repository:
+  name: VPNHide
+  description: >-
+    Per-app hiding of an on-device VPN interface from an iOS app's detection.
+    Sanitizes getifaddrs, CFNetworkCopySystemProxySettings, and the nw_path_*
+    family so a target app never sees the utun/ipsec tunnel, while traffic keeps
+    routing through the VPN. roothide/Dopamine, scoped via a Settings picker.
+  homepage: ""
+  topics:
+    - ios
+    - jailbreak
+    - tweak
+    - roothide
+    - dopamine
+    - vpn
+    - vpn-detection
+    - anti-detection
+    - theos
+    - ellekit
+    - libsandy
+    - altlist
+    - arm64e
+    - ios15
+  has_issues: true
+  has_projects: false
+  has_wiki: false
+  has_downloads: true
+  default_branch: master
+  allow_squash_merge: true
+  allow_merge_commit: true
+  allow_rebase_merge: true
+  delete_branch_on_merge: true

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>VPNHide</string>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Turn VPNHide on for the apps you want your VPN hidden from. Never enable it for a VPN client. Changes apply on the app's next launch.</string>
+		</dict>
+		<dict>
+			<!-- AltList's multi-select picker: apps with switches, search, and
+			     sections. Saves the enabled apps' bundle IDs to EnabledBundles
+			     in the xyz.regulad.vpnhide domain (defaultApplicationSwitchValue
+			     is false, so the saved array = the apps switched ON). -->
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>detail</key>
+			<string>ATLApplicationListMultiSelectionController</string>
+			<key>label</key>
+			<string>Apps</string>
+			<key>defaults</key>
+			<string>xyz.regulad.vpnhide</string>
+			<key>key</key>
+			<string>EnabledBundles</string>
+			<key>defaultApplicationSwitchValue</key>
+			<false/>
+			<key>useSearchBar</key>
+			<true/>
+			<key>showIdentifiersAsSubtitle</key>
+			<true/>
+			<key>sections</key>
+			<array>
+				<dict>
+					<key>sectionType</key>
+					<string>User</string>
+				</dict>
+				<dict>
+					<key>sectionType</key>
+					<string>System</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

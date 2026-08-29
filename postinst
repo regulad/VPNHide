@@ -1,0 +1,11 @@
+#!/bin/sh
+# Reload Settings so the PreferenceLoader entry appears without a manual respring.
+# A full respring is unnecessary: the tweak self-gates at each app's next launch,
+# and respringing SpringBoard would not reload an already-running target app.
+# We deliberately do NOT killall SpringBoard here - that could take down the
+# package manager doing the install.
+if [ "$1" = "configure" ] || [ "$1" = "install" ] || [ "$1" = "upgrade" ]; then
+    killall Preferences >/dev/null 2>&1 || true
+fi
+
+exit 0

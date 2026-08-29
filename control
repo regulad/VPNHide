@@ -1,0 +1,9 @@
+Package: xyz.regulad.vpnhide
+Name: VPNHide
+Version: 0.1.0
+Architecture: iphoneos-arm64e
+Description: Per-app hiding of an on-device VPN interface from getifaddrs / proxy / NWPath checks, with a Settings toggle
+Maintainer: regulad
+Author: regulad
+Section: Tweaks
+Depends: ellekit, preferenceloader, com.opa334.altlist, com.opa334.libsandy
