@@ -6,10 +6,8 @@ _extends: .github
 repository:
   name: VPNHide
   description: >-
-    Per-app hiding of an on-device VPN interface from an iOS app's detection.
-    Sanitizes getifaddrs, CFNetworkCopySystemProxySettings, and the nw_path_*
-    family so a target app never sees the utun/ipsec tunnel, while traffic keeps
-    routing through the VPN. roothide/Dopamine, scoped via a Settings picker.
+    Hides an on-device VPN interface from chosen iOS apps, while their
+    traffic keeps routing through the VPN
   homepage: ""
   private: false
   # Topics: comma-and-space separated string, NOT a YAML list.
